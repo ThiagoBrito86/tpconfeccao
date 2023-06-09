@@ -34,12 +34,7 @@ const routes: Routes = [
         path: 'base',
         loadChildren: () =>
           import('./views/base/base.module').then((m) => m.BaseModule)
-      },
-      {
-        path: 'buttons',
-        loadChildren: () =>
-          import('./views/buttons/buttons.module').then((m) => m.ButtonsModule)
-      },
+      },      
       {
         path: 'forms',
         loadChildren: () =>
@@ -70,6 +65,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./views/pages/pages.module').then((m) => m.PagesModule)
       },
+      {
+        path: 'compras',
+        loadChildren: () =>
+          import('./views/compras/compras.module').then((m) => m.ComprasModule)
+      }
     ]
   },
   {
