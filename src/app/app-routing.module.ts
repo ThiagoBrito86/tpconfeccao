@@ -68,7 +68,7 @@ const routes: Routes = [
       {
         path: 'compras',
         loadChildren: () =>
-          import('./views/compras/compras.module').then((m) => m.ComprasModule)
+          import('./views/Compras/compras.module').then((m) => m.ComprasModule)
       }
     ]
   },
