@@ -1,2 +1,40 @@
-<p>lista works!</p>
 <button cButton (click)="redirectToLink()">Conceito de Compras</button>
+
+<table [striped]="true" cTable>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Data</th>
+            <th scope="col">Malharia</th>
+            <th scope="col">Total</th>
+            <th scope="col">Peso</th>
+            <th scope="col">Preço por Kilo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>01/05/2023</td>
+            <td>Karil</td>
+            <td>20.000,00</td>
+            <td>600,00</td>
+            <td>33,33</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>15/05/2023</td>
+            <td>Eduardo Malharia</td>
+            <td>16.520,00</td>
+            <td>420,00</td>
+            <td>39,33</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>17/06/2023</td>
+            <td>Eduardo Malharia</td>
+            <td>21.965,48</td>
+            <td>563,96</td>
+            <td>40,90</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+.row {
+    display: flex;
+    justify-content: space-between;    
+  }
+  .cardKid {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }

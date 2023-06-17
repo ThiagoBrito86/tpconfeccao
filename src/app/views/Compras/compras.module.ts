@@ -19,6 +19,7 @@ import {
   NavbarModule,
   NavModule,
   SharedModule,
+  TableModule,
   UtilitiesModule
 } from '@coreui/angular';
 
@@ -46,7 +47,8 @@ import { IconModule } from '@coreui/icons-angular';
     NavbarModule,
     CollapseModule,
     NavModule,
-    NavbarModule
+    NavbarModule,
+    TableModule
   ]
 })
 export class ComprasModule {
