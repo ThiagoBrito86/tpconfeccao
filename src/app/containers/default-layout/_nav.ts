@@ -21,7 +21,7 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Pagamentos',
-    url: '/theme/typography',
+    url: '/pagamentos/lista',
     linkProps: { fragment: 'someAnchor' },
     iconComponent: { name: 'cil-pencil' }
   },
@@ -31,28 +31,28 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Corte',
-    url: '/base',
+    url: '',
     iconComponent: { name: 'cil-puzzle' }    
   },
   {
-    name: 'Facção',
-    url: '/buttons',
+    name: 'Costura',
+    url: '',
     iconComponent: { name: 'cil-cursor' }    
   },
   {
     name: 'Estoque',
-    url: '/forms',
+    url: '',
     iconComponent: { name: 'cil-notes' },
     
   },
   {
     name: 'Vendas',
-    url: '/charts',
+    url: '',
     iconComponent: { name: 'cil-chart-pie' }
   },
   {
     name: 'Caixa',
     iconComponent: { name: 'cil-star' },
-    url: '/icons',    
+    url: '',    
   }
 ];

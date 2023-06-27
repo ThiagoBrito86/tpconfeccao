@@ -36,6 +36,7 @@
     "@coreui/icons-angular": "~4.5.0",
     "@coreui/utils": "^2.0.2",
     "chart.js": "^3.9.1",
+    "firebase": "^9.23.0",
     "ngx-scrollbar": "^12.0.0",
     "rxjs": "~7.8.1",
     "tslib": "^2.3.0",

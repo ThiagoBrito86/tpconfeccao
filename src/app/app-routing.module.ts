@@ -69,6 +69,11 @@ const routes: Routes = [
         path: 'compras',
         loadChildren: () =>
           import('./views/Compras/compras.module').then((m) => m.ComprasModule)
+      },
+      {
+        path: 'pagamentos',
+        loadChildren: () =>
+          import('./views/pagamentos/pagamentos.module').then((m) => m.PagamentosModule)
       }
     ]
   },
