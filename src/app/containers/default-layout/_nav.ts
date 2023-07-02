@@ -31,12 +31,12 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Corte',
-    url: '',
+    url: '/cortes/lista',
     iconComponent: { name: 'cil-puzzle' }    
   },
   {
     name: 'Costura',
-    url: '',
+    url: '/costuras/lista',
     iconComponent: { name: 'cil-cursor' }    
   },
   {

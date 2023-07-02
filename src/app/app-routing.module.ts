@@ -74,6 +74,16 @@ const routes: Routes = [
         path: 'pagamentos',
         loadChildren: () =>
           import('./views/pagamentos/pagamentos.module').then((m) => m.PagamentosModule)
+      },
+      {
+        path: 'cortes',
+        loadChildren: () =>
+          import('./views/cortes/cortes.module').then((m) => m.CortesModule)
+      },
+      {
+        path: 'costuras',
+        loadChildren: () =>
+          import('./views/costuras/costuras.module').then((m) => m.CosturasModule)
       }
     ]
   },
