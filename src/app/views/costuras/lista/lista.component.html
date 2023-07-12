@@ -1,1 +1,43 @@
-<p>lista works!</p>
+<button cButton (click)="redirectToLink()">Conceito</button>
+<c-row ngPreserveWhitespaces>
+    <c-col xs="12">        
+        <c-card class="mb-4">
+            <c-card-header>
+                <strong>Costura</strong>
+            </c-card-header>
+            <c-card-body>
+                <table [striped]="true" cTable>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Costureiro(a)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Camiseta</td>
+                            <td>200</td>
+                            <td>Fabio Constureiro</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Camiseta Regata</td>
+                            <td>200</td>
+                            <td>Fabrica</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Blusa Ref. 432</td>
+                            <td>600</td>
+                            <td>Facção Junior</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </c-card-body>
+        </c-card>
+
+    </c-col>
+</c-row>

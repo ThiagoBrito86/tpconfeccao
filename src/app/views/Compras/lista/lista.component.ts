@@ -13,4 +13,8 @@ export class ListaComponent {
   redirectToLink(): void {
     this.router.navigateByUrl('/compras/conceito');
   }
+
+  redirectToRegistrar(): void {
+    this.router.navigateByUrl('/compras/registrar');
+  }
 }

@@ -24,11 +24,14 @@ import {
 } from '@coreui/angular';
 
 import { IconModule } from '@coreui/icons-angular';
+import { CompraRegistrarComponent } from './compra-registrar/compra-registrar.component';
 
 @NgModule({
   declarations: [
     ListaComponent,
-    ConceitoComponent
+    ConceitoComponent,
+    CompraRegistrarComponent,
+    CompraRegistrarComponent
   ],
   imports: [
     CommonModule,

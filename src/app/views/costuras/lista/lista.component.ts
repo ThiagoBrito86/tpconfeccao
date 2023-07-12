@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista.component.scss']
 })
 export class ListaComponent {
+  constructor(private router: Router) {}
+
+  redirectToLink(): void {
+    this.router.navigateByUrl('/costura/conceito');
+  }
 
 }
