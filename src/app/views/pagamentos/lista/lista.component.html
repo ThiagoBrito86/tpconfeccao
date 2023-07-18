@@ -6,17 +6,21 @@
             <th scope="col">#</th>
             <th scope="col">Vencimento</th>            
             <th scope="col">Fornecedor</th>
+            <th scope="col">Valor</th>
             <th scope="col">Tipo de pagamento</th>
-            <th scope="col">Valor</th>            
+            <th scope="col">Status</th>
+            <th scope="col">Vence em:</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row"></th>
-            <td></td>            
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr *ngFor="let pagamento of _lista">
+            <th scope="row">{{pagamento.id}}</th>
+            <td>{{pagamento.vencimento}}</td>
+            <td>{{pagamento.fornecedor}}</td>
+            <td>{{pagamento.total}}</td>
+            <td>{{pagamento.tipoPagamento}}</td>
+            <td>{{pagamento.status}}</td>
+            <td>{{pagamento.venceEmdias}}</td>
         </tr>       
     </tbody>
 </table>

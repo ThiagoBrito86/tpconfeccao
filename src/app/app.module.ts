@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { BrowserModule, Title } from '@angular/platform-browser';
@@ -37,6 +38,7 @@ import {
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { initializeApp } from 'firebase-admin';
 
 const APP_CONTAINERS = [
   DefaultFooterComponent,

@@ -18,14 +18,41 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr *ngFor="let corte of _lista">
+                            <th scope="row">{{corte.id}}</th>
+                            <td>{{corte.data}}</td>
+                            <td>{{corte.totalPecas}}</td>
+                            <td>{{corte.pecasPorModelo}}</td>
+                            <td>{{corte.fase}}</td>
+                            <td>{{corte.compraOrigem}}</td>                            
+                        </tr>
+                    </tbody>
+                </table>
+            </c-card-body>
+        </c-card>
+        <c-card class="mb-4">
+            <c-card-header>
+                <strong>Distribuição</strong>
+            </c-card-header>
+            <c-card-body>
+                <table [striped]="true" cTable>
+                    <thead>
                         <tr>
-                            <th scope="row"></th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>                        
+                            <th scope="col">#</th>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Costureiro(a)</th>
+                            <th scope="col">Entrega</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let distribuicao of _listaDistribuicao">
+                            <th scope="row">{{distribuicao.id}}</th>
+                            <td>{{distribuicao.modelo}}</td>
+                            <td>{{distribuicao.quantidade}}</td>
+                            <td>{{distribuicao.cosutureiro}}</td>
+                            <td>{{distribuicao.dataEntrega}}</td>                            
+                        </tr>
                     </tbody>
                 </table>
             </c-card-body>
@@ -47,32 +74,6 @@
                     <tbody>
                         <tr>
                             <th scope="row"></th>
-                            <td></td>
-                            <td></td>
-                        </tr>                        
-                    </tbody>
-                </table>
-            </c-card-body>
-        </c-card>
-
-        <c-card class="mb-4">
-            <c-card-header>
-                <strong>Distribuição</strong>
-            </c-card-header>
-            <c-card-body>
-                <table [striped]="true" cTable>
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Modelo</th>
-                            <th scope="col">Quantidade</th>
-                            <th scope="col">Costureiro(a)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row"></th>
-                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>                        
