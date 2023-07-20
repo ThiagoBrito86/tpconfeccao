@@ -1,0 +1,106 @@
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para o cabeçalho da tabela */
+thead th {
+    //background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Estilo para linhas ímpares */
+tbody tr:nth-child(odd) {
+    //background-color: #f9f9f988;
+}
+
+/* Estilo para a coluna # */
+th:nth-child(1),
+td:nth-child(1) {
+    //width: 5%;
+}
+
+/* Estilo para a coluna Data */
+th:nth-child(2),
+td:nth-child(2) {
+    //width: 15%;
+}
+
+/* Estilo para a coluna Malharia */
+th:nth-child(3),
+td:nth-child(3) {
+    //width: 20%;
+}
+
+/* Estilo para as colunas Total, Peso e Preço por Kilo */
+th:nth-child(4),
+td:nth-child(4),
+th:nth-child(5),
+td:nth-child(5),
+th:nth-child(6),
+td:nth-child(6) {
+    //width: 15%;
+}
+
+/* Estilos para dispositivos com largura máxima de 768px (tablets, smartphones, etc.) */
+@media (max-width: 768px) {
+    th {
+        display: none;
+    }
+
+    td {
+        //display: block;
+        display: grid;
+        grid-template-columns: 15ch auto;
+        padding: 0.5rem 1rem;
+    }
+
+    td::before{
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    td:first-child {
+        padding-top: 2rem;
+    }
+
+    td:last-child {
+        padding-bottom: 2rem;
+    }
+
+    /*td:nth-of-type(1)::before {
+        content: "Data: ";
+    }
+    td:nth-of-type(2)::before {
+        content: "Malharia: ";
+    }
+
+    td:nth-of-type(3)::before {
+        content: "Total: ";
+    }
+    td:nth-of-type(4)::before {
+        content: "Peso: ";
+    }
+    td:nth-of-type(5)::before {
+        content: "Preço (Kg): ";
+    }*/
+
+    /* Defina os estilos para o cabeçalho da tabela em telas menores */
+    thead th {
+        font-size: 12px;
+    }
+
+    /* Defina os estilos para o corpo da tabela em telas menores */
+    tbody td {
+        font-size: 12px;
+    }
+}

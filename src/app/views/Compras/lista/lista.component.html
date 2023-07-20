@@ -15,11 +15,11 @@
     <tbody>
         <tr *ngFor="let compra of _compras">
             <th scope="row">{{compra.id}}</th>
-            <td>{{compra.data}}</td>
-            <td>{{compra.malharia}}</td>
-            <td>{{compra.total}}</td>
-            <td>{{compra.peso}}</td>
-            <td>{{compra.preco}}</td>
+            <td data-cell="Data">{{compra.data}}</td>
+            <td data-cell="Malharia">{{compra.malharia}}</td>
+            <td data-cell="Total">{{compra.total}}</td>
+            <td data-cell="Peso">{{compra.peso}}</td>
+            <td data-cell="Preço">{{compra.preco}}</td>
         </tr>       
     </tbody>
 </table>
