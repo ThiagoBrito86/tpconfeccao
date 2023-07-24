@@ -65,7 +65,7 @@ export class CortesService {
         dataEntrega: '24/07/2023',
         modelo: 'Laser',
         quantidade: '204',
-        constureiro: 'IRIS',        
+        constureiro: 'LUCIA',        
       },
       {
         dataEntrega: 'indefinida',
@@ -74,8 +74,8 @@ export class CortesService {
         constureiro: '',        
       },      
       {
-        dataEntrega: '24/07/2023', modelo: 'Veludo',
-        quantidade: '204', constureiro: 'LUCIA',        
+        dataEntrega: 'indefinida', modelo: 'Veludo',
+        quantidade: '204', constureiro: '',        
       },
       {
         dataEntrega: '19/07/2023', modelo: '50 GG',
