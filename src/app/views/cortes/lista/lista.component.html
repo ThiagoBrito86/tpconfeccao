@@ -20,11 +20,11 @@
                     <tbody>
                         <tr *ngFor="let corte of _lista">
                             <th scope="row">{{corte.id}}</th>
-                            <td>{{corte.data}}</td>
-                            <td>{{corte.totalPecas}}</td>
-                            <td>{{corte.pecasPorModelo}}</td>
-                            <td>{{corte.fase}}</td>
-                            <td>{{corte.compraOrigem}}</td>                            
+                            <td data-cell="Data">{{corte.data}}</td>
+                            <td data-cell="Total Peças">{{corte.totalPecas}}</td>
+                            <td data-cell="Peças por Modelo">{{corte.pecasPorModelo}}</td>
+                            <td data-cell="Fase">{{corte.fase}}</td>
+                            <td data-cell="Compra Origem">{{corte.compraOrigem}}</td>                            
                         </tr>
                     </tbody>
                 </table>
@@ -39,8 +39,7 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Modelo</th>
-                            <th scope="col">Quantidade</th>
+                            <th scope="col">Modelo</th>                            
                             <th scope="col">Costureiro(a)</th>
                             <th scope="col">Entrega</th>
                         </tr>
@@ -48,10 +47,9 @@
                     <tbody>
                         <tr *ngFor="let distribuicao of _listaDistribuicao">
                             <th scope="row">{{distribuicao.id}}</th>
-                            <td>{{distribuicao.modelo}}</td>
-                            <td>{{distribuicao.quantidade}}</td>
-                            <td>{{distribuicao.cosutureiro}}</td>
-                            <td>{{distribuicao.dataEntrega}}</td>                            
+                            <td data-cell="Modelo">{{distribuicao.modelo}}</td>
+                            <td data-cell="Costureira">{{distribuicao.constureiro}}</td>
+                            <td data-cell="Entrega">{{distribuicao.dataEntrega}}</td>                            
                         </tr>
                     </tbody>
                 </table>

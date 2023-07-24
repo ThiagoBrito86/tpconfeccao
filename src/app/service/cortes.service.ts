@@ -26,74 +26,68 @@ export class CortesService {
   getDistribuicao(){
     return [
       {
-        dataEntrega: 'indefinida',
+        dataEntrega: '24/07/2023',
         modelo: 'Princesa G',
         quantidade: '204',
-        constureiro: '',        
+        constureiro: 'IRIS',        
       },
       {
-        dataEntrega: 'indefinida',
+        dataEntrega: '24/07/2023',
         modelo: '71 G',
         quantidade: '204',
-        constureiro: '',        
+        constureiro: 'IRIS',        
       },
       {
-        dataEntrega: 'indefinida',
+        dataEntrega: '24/07/2023',
         modelo: '003',
         quantidade: '204',
-        constureiro: '',        
+        constureiro: 'IRIS',        
       },
       {
-        dataEntrega: 'indefinida',
+        dataEntrega: '24/07/2023',
         modelo: 'Laço G',
         quantidade: '204',
-        constureiro: '',        
+        constureiro: 'RUTE',        
       },
       {
-        dataEntrega: 'indefinida',
+        dataEntrega: '24/07/2023',
         modelo: 'Sued',
         quantidade: '204',
-        constureiro: '',        
+        constureiro: 'DAMIANE',        
       },
       {
-        dataEntrega: 'indefinida',
+        dataEntrega: '24/07/2023',
         modelo: '20 quadrado',
         quantidade: '204',
-        constureiro: '',        
+        constureiro: 'RUTE',        
       },
       {
-        dataEntrega: 'indefinida',
+        dataEntrega: '24/07/2023',
         modelo: 'Laser',
         quantidade: '204',
-        constureiro: '',        
+        constureiro: 'IRIS',        
       },
       {
         dataEntrega: 'indefinida',
         modelo: '32 quadrado',
         quantidade: '204',
         constureiro: '',        
+      },      
+      {
+        dataEntrega: '24/07/2023', modelo: 'Veludo',
+        quantidade: '204', constureiro: 'LUCIA',        
       },
       {
-        dataEntrega: 'indefinida',
-        modelo: 'Veludo',
-        quantidade: '204',
-        constureiro: '',        
-      },
-      {
-        dataEntrega: 'indefinida', modelo: 'Veludo',
-        quantidade: '204', constureiro: '',        
-      },
-      {
-        dataEntrega: 'indefinida', modelo: '50 GG',
-        quantidade: '204', constureiro: '',        
+        dataEntrega: '19/07/2023', modelo: '50 GG',
+        quantidade: '204', constureiro: 'IRIS',        
       },
       {
         dataEntrega: 'indefinida', modelo: 'Princesa GG quadrado',
         quantidade: '204', constureiro: '',        
       },
       {
-        dataEntrega: 'indefinida', modelo: 'Princesa de brilho GG',
-        quantidade: '204', constureiro: '',        
+        dataEntrega: '24/07/2023', modelo: 'Princesa de brilho GG',
+        quantidade: '204', constureiro: 'FRANCIANE',        
       }
     ];
   }

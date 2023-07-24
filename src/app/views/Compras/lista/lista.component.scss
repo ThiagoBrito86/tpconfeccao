@@ -56,6 +56,9 @@ td:nth-child(6) {
     th {
         display: none;
     }
+    td:nth-child(5) {
+        display: none;
+    }
 
     td {
         //display: block;
