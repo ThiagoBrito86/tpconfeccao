@@ -19,7 +19,7 @@ export class PagamentosService {
         total: '25.117,98',
         tipoPagamento: 'crédito',
         status: 'Em Aberto',
-        venceEmdias: '26 dias'
+        venceEmdias: '22 dias'
       }
     ];
   }

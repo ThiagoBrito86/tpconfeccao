@@ -1,0 +1,47 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para dispositivos móveis com largura máxima de 768 pixels */
+
+.c-card-footer {
+    display: flex;    
+}
+
+@media screen and (max-width: 768px) {
+    .mb-3 {
+        margin-bottom: 10px;
+    }
+
+    .c-col {
+        width: 100%;
+    }
+}
+
+/* Estilos para dispositivos maiores (acima de 768 pixels de largura) */
+@media screen and (min-width: 769px) {
+    .c-row {
+        margin: +15px;
+        /* Adicione espaçamento negativo para compensar o espaçamento padrão do c-row */
+
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;        
+    }
+  
+    .c-col {
+        padding: 15px;
+        /* Adicione espaçamento para os c-cols dentro de c-row */
+    }
+
+    /* Divida o layout em colunas de 50% para telas maiores, exceto para c-col com xs="12" */
+    .c-col:not([xs="12"]) {
+        width: 50%;
+    }
+}

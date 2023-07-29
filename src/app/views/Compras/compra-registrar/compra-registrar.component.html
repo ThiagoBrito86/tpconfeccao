@@ -7,12 +7,10 @@
             <c-card-body>
                 <form cForm>
                     <c-row>
-                        <c-col xs="9">
-                            <div class="mb-3">
-                                <label cLabel for="exampleFormControlInput1">Data</label>
-                                <input cFormControl id="exampleFormControlInput1" placeholder="" type="date" />
-                            </div>
-                        </c-col>
+                        <div class="col-sm-4">
+                            <label cLabel for="exampleFormControlInput1">Data</label>
+                            <input cFormControl id="exampleFormControlInput1" placeholder="" type="date" />
+                        </div>
                     </c-row>
                     <c-row>
                         <c-col xs="12">
@@ -23,29 +21,27 @@
                         </c-col>
                     </c-row>
                     <c-row>
-                        <c-col xs="6">
-                            <div class="mb-3">
-                                <label cLabel for="exampleFormControlInput1">Peso</label>
-                                <input cFormControl id="exampleFormControlInput1" placeholder="" type="number" />
-                            </div>
-                        </c-col>
-                        <c-col xs="6">
-                            <div class="mb-3">
-                                <label cLabel for="exampleFormControlInput1">Preço por Kg</label>
-                                <input cFormControl id="exampleFormControlInput1" placeholder="" type="number" />
-                            </div>
-                        </c-col>                        
+                        <div class="col-sm-4">
+                            <label cLabel for="exampleFormControlInput1">Peso</label>
+                            <input cFormControl id="exampleFormControlInput1" placeholder="" type="number" />
+                        </div>
+                        <div class="col-sm-3">
+                            <label cLabel for="exampleFormControlInput1">Preço por Kg</label>
+                            <input cFormControl id="exampleFormControlInput1" placeholder="" type="number" />
+                        </div>
+                        <div class="col-sm-5">
+                            <label cLabel for="exampleFormControlInput1">Total</label>
+                            <input cFormControl id="exampleFormControlInput1" placeholder="" type="number" />
+                        </div>
                     </c-row>
-                    <c-row>
-                        <c-col xs="12">
-                            <div class="mb-3">
-                                <label cLabel for="exampleFormControlInput1">Total</label>
-                                <input cFormControl id="exampleFormControlInput1" placeholder="" type="number" />
-                            </div>
-                        </c-col>
-                    </c-row>
+
                 </form>
             </c-card-body>
+            <c-card-footer>
+                <div class="container d-flex justify-content-end">
+                    <button class="btn btn-info">Salvar</button>
+                  </div>
+            </c-card-footer>
         </c-card>
     </c-col>
 </c-row>
