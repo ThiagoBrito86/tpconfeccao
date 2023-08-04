@@ -3,3 +3,39 @@ table {
     border-collapse: collapse;
     margin-bottom: 20px;
   }
+
+  @media (max-width: 768px) {
+    th {
+        display: none;
+    }
+    
+    td {
+        //display: block;
+        display: grid;
+        grid-template-columns: 15ch auto;
+        padding: 0.5rem 1rem;
+    }
+
+    td::before{
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    td:first-child {
+        padding-top: 2rem;
+    }
+
+    td:last-child {
+        padding-bottom: 2rem;
+    }
+
+    /* Defina os estilos para o cabeçalho da tabela em telas menores */
+    thead th {
+        font-size: 12px;
+    }
+
+    /* Defina os estilos para o corpo da tabela em telas menores */
+    tbody td {
+        font-size: 12px;
+    }
+}

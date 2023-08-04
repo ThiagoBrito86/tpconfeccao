@@ -17,9 +17,16 @@ export class PagamentosService {
         vencimento: '14/08/2023 (segunda-feira)',
         fornecedor: 'Triunfo Malhas',
         total: '25.117,98',
-        tipoPagamento: 'crédito',
-        status: 'Em Aberto',
-        venceEmdias: '22 dias'
+        pago: '12.225,00',
+        pendente: '12.892,98',
+        status: 'Em aberto',
+        venceEmdias: '10 dias',
+        parciais: [
+          {data: '28/07/2023', valor: '815,00', tipo:'crédito'},
+          {data: '03/08/2023', valor: '3.910,00', tipo:'cheque'},
+          {data: '03/08/2023', valor: '5.000,00', tipo:'pix'},
+          {data: '04/08/2023', valor: '2.500,00', tipo:'pix'}          
+        ]
       }
     ];
   }
