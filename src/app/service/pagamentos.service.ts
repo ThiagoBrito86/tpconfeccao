@@ -1,6 +1,4 @@
-import { environment } from './../../environments/environment.development';
 import { Injectable } from '@angular/core';
-import 'firebase/firestore';
 
 @Injectable({
   providedIn: 'root'

@@ -1,15 +1,23 @@
-import { environment } from './../../environments/environment.development';
 import { Injectable } from '@angular/core';
-import 'firebase/firestore';
+import { BaseService } from './base-service.service';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ComprasService {
-  
-  constructor() {         
+export class CompraService extends BaseService {
+
+  constructor(private http: HttpClient) {
+    super();
+  }
+//https://localhost:7150/api/Compras/1/Get
+  get() {
+    return this.http.get(`${this.apiUrl}/compras/1/Get`);
   }
 
+  postData(data: any) {
+    return this.http.post(`${this.apiUrl}/compras`, data);
+  }
 
   getCompras(){
     return [
@@ -31,5 +39,4 @@ export class ComprasService {
       }
     ];
   }
-  
 }

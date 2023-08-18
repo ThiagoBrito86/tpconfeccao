@@ -1,4 +1,4 @@
-import { ComprasService } from './../../../service/compras.service';
+import { CompraService } from '../../../service/compra-service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -9,17 +9,29 @@ import { Router } from '@angular/router';
 })
 export class ListaComponent {
 
-  constructor(private router: Router, private service: ComprasService) { }
+  constructor(private router: Router, private comprasService: CompraService) { }
   public _compras: any = [];
-  ngOnInit() {
-    this._compras = this.service.getCompras();
-  }
 
+  ngOnInit(): void {
+    this.carregarCompras();
+    console.log(this._compras);
+  }
   redirectToLink(): void {
     this.router.navigateByUrl('/compras/conceito');
   }
 
   redirectToRegistrar(): void {
     this.router.navigateByUrl('/compras/registrar');
+  }
+
+  carregarCompras() {
+    this.comprasService.get().subscribe(
+      (data) => {
+        this._compras = data;
+      },
+      (error) => {
+        console.error('Erro ao carregar compras:', error);
+      }
+    );
   }
 }
