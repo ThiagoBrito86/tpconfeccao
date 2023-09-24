@@ -12,12 +12,15 @@
                             <input cFormControl id="exampleFormControlInput1" placeholder="" type="date" />
                         </div>
                     </c-row>
-                    <c-row>
+                    <c-row>                        
                         <c-col xs="12">
-                            <div class="mb-3">
-                                <label cLabel for="exampleFormControlInput1">Malharia</label>
-                                <input cFormControl id="exampleFormControlInput1" placeholder="" type="text" />
-                            </div>
+                            <label cLabel for="exampleFormControlInput1">Malharia</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value=""></option>
+                                <option *ngFor="let fornecedor of _fornecedores" value="{{fornecedor.Id}}">
+                                    {{fornecedor.nome}}
+                                </option>                                
+                            </select>
                         </c-col>
                     </c-row>
                     <c-row>
@@ -40,7 +43,7 @@
             <c-card-footer>
                 <div class="container d-flex justify-content-end">
                     <button class="btn btn-info">Salvar</button>
-                  </div>
+                </div>
             </c-card-footer>
         </c-card>
     </c-col>

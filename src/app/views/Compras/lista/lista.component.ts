@@ -13,8 +13,7 @@ export class ListaComponent {
   public _compras: any = [];
 
   ngOnInit(): void {
-    this.carregarCompras();
-    console.log(this._compras);
+    this.carregarCompras();    
   }
   redirectToLink(): void {
     this.router.navigateByUrl('/compras/conceito');

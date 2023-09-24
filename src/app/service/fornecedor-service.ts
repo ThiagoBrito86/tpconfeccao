@@ -5,17 +5,17 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class CompraService extends BaseService {
+export class FornecedorService extends BaseService {
 
   constructor(private http: HttpClient) {
     super();
   }
   get() {
-    return this.http.get(`${this.apiUrl}/compras/1/Get`);
+    return this.http.get(`${this.apiUrl}/fornecedores/1/Get`);
   }
 
   postData(data: any) {
-    return this.http.post(`${this.apiUrl}/compras`, data);
+    return this.http.post(`${this.apiUrl}/fornecedores`, data);
   }
 
 }
