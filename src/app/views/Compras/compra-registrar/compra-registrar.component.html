@@ -5,36 +5,36 @@
                 <strong>Registrar Compra</strong>
             </c-card-header>
             <c-card-body>
-                <form cForm>
+                <form cForm [formGroup]="compraForm">
                     <c-row>
                         <div class="col-sm-4">
                             <label cLabel for="exampleFormControlInput1">Data</label>
-                            <input cFormControl id="exampleFormControlInput1" placeholder="" type="date" />
+                            <input cFormControl id="data" formControlName="data" placeholder="" type="date" />
                         </div>
                     </c-row>
                     <c-row>                        
                         <c-col xs="12">
                             <label cLabel for="exampleFormControlInput1">Malharia</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" id="malharia" formControlName="fornecedorId" (change)="onSelecaoChange()">
                                 <option value=""></option>
-                                <option *ngFor="let fornecedor of _fornecedores" value="{{fornecedor.Id}}">
-                                    {{fornecedor.nome}}
+                                <option *ngFor="let fornecedor of _fornecedores" [value]="fornecedor.id">
+                                    {{fornecedor.Id}} {{fornecedor.nome}}
                                 </option>                                
-                            </select>
+                            </select>                            
                         </c-col>
                     </c-row>
                     <c-row>
                         <div class="col-sm-4">
                             <label cLabel for="exampleFormControlInput1">Peso</label>
-                            <input cFormControl id="exampleFormControlInput1" placeholder="" type="number" />
+                            <input cFormControl id="peso" formControlName="peso" placeholder="" type="text" mask="separator.2"/>
                         </div>
                         <div class="col-sm-3">
                             <label cLabel for="exampleFormControlInput1">Preço por Kg</label>
-                            <input cFormControl id="exampleFormControlInput1" placeholder="" type="number" />
+                            <input cFormControl id="precoPorKg" formControlName="preco" type="text" mask="separator.2" />
                         </div>
                         <div class="col-sm-5">
                             <label cLabel for="exampleFormControlInput1">Total</label>
-                            <input cFormControl id="exampleFormControlInput1" placeholder="" type="number" />
+                            <input cFormControl id="total" formControlName="total" type="text" readonly />
                         </div>
                     </c-row>
 
@@ -42,7 +42,7 @@
             </c-card-body>
             <c-card-footer>
                 <div class="container d-flex justify-content-end">
-                    <button class="btn btn-info">Salvar</button>
+                    <button class="btn btn-info" [disabled]="!compraForm.valid" (click)="salvar()">Salvar</button>
                 </div>
             </c-card-footer>
         </c-card>

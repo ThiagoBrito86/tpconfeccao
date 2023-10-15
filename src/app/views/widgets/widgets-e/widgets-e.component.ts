@@ -130,7 +130,7 @@ export class WidgetsEComponent implements AfterContentInit {
 
   getDayName(shift = 0) {
     // @ts-ignore
-    const locale = navigator.language ?? navigator.userLanguage ?? navigator.systemLanguage ?? navigator.browserLanguage ?? 'en-US';
+    const locale = navigator.language ?? navigator.userLanguage ?? navigator.systemLanguage ?? navigator.browserLanguage ?? 'pt-BR';
     const baseDate = new Date(Date.UTC(2000, 1, 0)); // Monday
     baseDate.setDate(baseDate.getDate() + shift);
     return baseDate.toLocaleDateString(locale, { weekday: 'short' });

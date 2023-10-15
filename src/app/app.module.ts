@@ -1,4 +1,7 @@
-
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import ptBR from '@angular/common/locales/pt';
+import { SharedComponentModule } from './views/shared/sharedComponent.module';
 import { NgModule } from '@angular/core';
 import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { BrowserModule, Title } from '@angular/platform-browser';
@@ -31,7 +34,6 @@ import {
   ListGroupModule,
   NavModule,
   ProgressModule,
-  SharedModule,
   SidebarModule,
   TabsModule,
   UtilitiesModule
@@ -39,6 +41,10 @@ import {
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxMaskDirective , NgxMaskPipe, provideNgxMask} from 'ngx-mask';
+
+
+registerLocaleData(ptBR);
 
 const APP_CONTAINERS = [
   DefaultFooterComponent,
@@ -66,8 +72,7 @@ const APP_CONTAINERS = [
     UtilitiesModule,
     ButtonGroupModule,
     ReactiveFormsModule,
-    SidebarModule,
-    SharedModule,
+    SidebarModule,    
     TabsModule,
     ListGroupModule,
     ProgressModule,
@@ -75,17 +80,21 @@ const APP_CONTAINERS = [
     ListGroupModule,
     CardModule,
     NgScrollbarModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedComponentModule,
+    NgxMaskDirective, 
+    NgxMaskPipe
   ],
   providers: [
     {
-      provide: LocationStrategy,
-      useClass: HashLocationStrategy
+      provide: LOCALE_ID, useValue: 'pt-BR' ,
+      useClass: HashLocationStrategy      
     },
     IconSetService,
     Title
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {
+export class AppModule {  
+
 }

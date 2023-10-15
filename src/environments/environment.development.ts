@@ -1,7 +1,7 @@
 export const environment = {
     production: false,
-    //apiUrl: 'https://localhost:7150/api',
-    apiUrl: 'https://charme-api.azurewebsites.net/api',
+    apiUrl: 'https://localhost:7150/api',
+    //apiUrl: 'https://charme-api.azurewebsites.net/api',
     firebaseConfig: {
         apiKey: "AIzaSyAySOvbFbYAw0D_FNWAdE6Ki7sPOsA8ro0",
         authDomain: "tpconfecao.firebaseapp.com",

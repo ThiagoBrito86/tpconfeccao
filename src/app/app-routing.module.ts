@@ -84,6 +84,11 @@ const routes: Routes = [
         path: 'costuras',
         loadChildren: () =>
           import('./views/costuras/costuras.module').then((m) => m.CosturasModule)
+      },
+      {
+        path: 'shared',
+        loadChildren: () =>
+          import('./views/shared/sharedComponent.module').then((m) => m.SharedComponentModule)
       }
     ]
   },

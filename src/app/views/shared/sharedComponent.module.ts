@@ -1,12 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NgxMaskDirective , NgxMaskPipe, provideNgxMask} from 'ngx-mask';
 
 import { DocsComponentsModule } from '@docs-components/docs-components.module';
-import { ListaComponent } from './lista/lista.component';
-import { ConceitoComponent } from './conceito/conceito.component';
-import {ComprasRoutingModule} from './compras-routing.module';
 
 
 import {
@@ -25,18 +21,15 @@ import {
 } from '@coreui/angular';
 
 import { IconModule } from '@coreui/icons-angular';
-import { CompraRegistrarComponent } from './compra-registrar/compra-registrar.component';
+import { MoneyInputComponent } from './money-input/money-input.component';
+
 
 @NgModule({
-  declarations: [
-    ListaComponent,
-    ConceitoComponent,
-    CompraRegistrarComponent,
-    CompraRegistrarComponent
+  declarations: [    
+    MoneyInputComponent
   ],
   imports: [
-    CommonModule,
-    ComprasRoutingModule,
+    CommonModule,    
     ButtonModule,
     ButtonGroupModule,
     GridModule,
@@ -52,12 +45,8 @@ import { CompraRegistrarComponent } from './compra-registrar/compra-registrar.co
     CollapseModule,
     NavModule,
     NavbarModule,
-    TableModule,
-    NgxMaskDirective, 
-    NgxMaskPipe,
-    
-  ],
-  providers: [provideNgxMask()]
+    TableModule
+  ]
 })
-export class ComprasModule {
+export class SharedComponentModule {
 }
